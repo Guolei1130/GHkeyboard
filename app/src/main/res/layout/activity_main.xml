@@ -14,6 +14,12 @@
         android:hint="@string/app_name"
         android:layout_margin="10dp"
         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="text"
+        android:gravity="center"
+        />
     <Button
         android:id="@+id/fragment"
         android:layout_width="wrap_content"

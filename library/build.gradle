@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 23
@@ -24,4 +25,13 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:23.2.0'
+}
+
+publish {
+    userOrg = 'guolei1130'//bintray.com用户名
+    groupId = 'com.guolei1130'//jcenter上的路径
+    artifactId = 'GHkeyboard'//项目名称
+    publishVersion = '1.0.0'//版本号
+    desc = 'click empty to hide keyboard'
+    website = 'https://github.com/Guolei1130/GHkeyboard'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
 }
